@@ -9,6 +9,7 @@ Setup steps
 
 ### Dependencies
 `npm install --save
+    compression
     cors
     cookie-parser
     debug
@@ -44,5 +45,21 @@ Setup steps
     sinon-chai
     supertest
 `
+
+#### End Points
+
+- get /v1/test
+    - returns test object
+- get /v1/messages
+    - return array of object messages from db
+    - `{
+        messages:[
+            {name:'name',message:'message'},
+            {name:'name',message:'message'}
+        ]
+    }`
+- post/v1/messages
+    - `body:{name:'name',message:'message'}`
+    - returns object
 
 

@@ -1,4 +1,5 @@
 import { Schema, model } from 'mongoose';
+import './connect';
 
 const messageSchema = new Schema({
   name: {

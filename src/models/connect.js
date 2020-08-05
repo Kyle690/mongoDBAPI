@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
@@ -9,10 +10,11 @@ dotenv.config();
   try {
     await mongoose.connect(connectionString, {
       useNewUrlParser: true,
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
+      useCreateIndex: true
     });
-    console.log('Database connected');
+    console.log('Connected');
   } catch (err) {
-    console.log(`Error: ${err.message}`);
+    console.error(`Error ${err.message}`);
   }
 })();
