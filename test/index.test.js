@@ -7,7 +7,7 @@ describe('test index', () => {
       .expect(200)
       .end((err, res) => {
         expect(res.status).to.equal(200);
-        expect(res.body.messages).to.equal('Test Env set');
+        expect(res.body.messages).to.equal('this is the test env variable');
       });
     done();
   });

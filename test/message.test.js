@@ -1,6 +1,6 @@
 import { expect, server, BASE_URL } from './setup';
 
-describe('Test home routes', () => {
+describe('Test message routes', () => {
   it('gets messages page', (done) => {
     server
       .get(`${BASE_URL}/messages`)

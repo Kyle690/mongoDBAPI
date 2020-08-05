@@ -10,12 +10,12 @@ export const messagesPage = async (req, res) => {
   }
 };
 
-export const addMessagePage = async (req, res, next) => {
+export const addMessagePage = async (req, res) => {
   const { name, message } = req.body;
   try {
     const m = await Messages({ name, message }).save();
     res.status(200).json({ success: true, message: m });
   } catch (e) {
-    next(e);
+    res.status(200).json({ error: e.message });
   }
 };

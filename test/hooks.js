@@ -1,10 +1,11 @@
 import mongoose from 'mongoose';
+import { createData, deleteData } from '../src/utils/queryFunction';
 
 before(async () => {
-  console.log('befroe');
+  await createData();
 });
 
 after(async () => {
-  console.log('after');
+  await deleteData();
   mongoose.connection.close();
 });
