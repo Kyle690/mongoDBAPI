@@ -2,6 +2,10 @@
 [![Build Status](https://travis-ci.com/Kyle690/mongoDBAPI.svg?branch=master)](https://travis-ci.com/Kyle690/mongoDBAPI)
 [![Coverage Status](https://coveralls.io/repos/github/Kyle690/mongoDBAPI/badge.svg?branch=master)](https://coveralls.io/github/Kyle690/mongoDBAPI?branch=master)
 
+Setup steps
+- get code climate if from https://codeclimate.com
+- then setup coveralls from https://coveralls.io
+
 
 ### Dependencies
 `npm install --save
